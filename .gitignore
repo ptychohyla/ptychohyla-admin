@@ -8,3 +8,4 @@ web/package-lock.json
 
 .env
 docker_env/mysql/data
+docker_env/redis/data
