@@ -1,7 +1,7 @@
 [
   {
     "username": "superadmin",
-    "email": "dvadmin@django-vue-admin.com",
+    "email": "ptychohyla@kayleh.top",
     "mobile": "13333333333",
     "avatar": null,
     "name": "超级管理员",
@@ -11,7 +11,7 @@
     "role_key": [
      "admin"
     ],
-    "dept_key": "dvadmin",
+    "dept_key": "ptychohyla",
     "first_name": "",
     "last_name": "",
     "is_staff": true,
@@ -22,14 +22,14 @@
   },
   {
     "username": "admin",
-    "email": "dvadmin@django-vue-admin.com",
+    "email": "ptychohyla@kayleh.top",
     "mobile": "18888888888",
     "avatar": "",
     "name": "管理员",
     "gender": 1,
     "user_type": 0,
     "role": [],
-    "dept_key": "dvadmin",
+    "dept_key": "ptychohyla",
     "first_name": "",
     "last_name": "",
     "is_staff": true,
@@ -40,7 +40,7 @@
   },
   {
     "username": "test",
-    "email": "dvadmin@django-vue-admin.com",
+    "email": "ptychohyla@kayleh.top",
     "mobile": "18888888888",
     "avatar": "",
     "name": "测试人员",

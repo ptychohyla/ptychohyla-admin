@@ -1,4 +1,4 @@
-FROM registry.cn-zhangjiakou.aliyuncs.com/dvadmin-pro/dvadmin3-base-backend:latest
+FROM python:3.10-alpine
 WORKDIR /backend
 COPY ./backend/ .
 RUN awk 'BEGIN { cmd="cp -i ./conf/env.example.py   ./conf/env.py "; print "n" |cmd; }'

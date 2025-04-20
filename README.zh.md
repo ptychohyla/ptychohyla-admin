@@ -20,8 +20,6 @@
 * 👫权限认证使用[Django REST Framework SimpleJWT](https://pypi.org/project/djangorestframework-simplejwt)，支持多终端认证系统。
 * 👬支持加载动态权限菜单，多方式轻松权限控制。
 * 👬全新的列权限管控，粒度细化到每一列。
-* 💏特别鸣谢：[vue-next-admin](https://lyt-top.gitee.io/vue-next-admin-doc-preview/)。
-* 💡特别感谢[jetbrains](https://www.jetbrains.com/) 为本开源项目提供免费的 IntelliJ IDEA 授权。
 
 #### 🏭 环境支持
 
@@ -36,22 +34,11 @@ netcat 是一个功能强大的网络工具，通常用于调试和测试网络�
 
 ## 在线体验
 
-👩‍👧‍👦演示地址：[https://demo.dvadmin.com](https://demo.dvadmin.com)
-
 * 账号：superadmin
 
 * 密码：admin123456
 
 👩‍👦‍👦文档地址：[DVAdmin官网](https://www.django-vue-admin.com)
-
-## 交流
-
-* 交流社区：[戳我](https://bbs.django-vue-admin.com)👩‍👦‍👦
-* 插件市场：[戳我](https://bbs.django-vue-admin.com/plugMarket.html)👩‍👦‍👦
-* django-vue-admin交流01群(已满)：812482043 [点击链接加入群聊](https://qm.qq.com/cgi-bin/qm/qr?k=aJVwjDvH-Es4MPJQuoO32N0SucK22TE5&jump_from=webapi)
-* django-vue-admin交流02群(已满)：687252418  [点击链接加入群聊](https://qm.qq.com/cgi-bin/qm/qr?k=4jJN4IjWGfxJ8YJXbb_gTsuWjR34WLdc&jump_from=webapi)
-* django-vue-admin交流03群(已满)：442108213  [点击链接加入群聊](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wsm5oSz3K8dElBYUDtLTcQSEPhINFkl8&authKey=M6sbER0z59ZakgBr5erFeZyFZU15CI52bErNZa%2FxSvvGIuVAbY0N5866v89hm%2FK4&noverify=0&group_code=442108213)
-* django-vue-admin交流04群：442108213  [点击链接加入群聊](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=wsm5oSz3K8dElBYUDtLTcQSEPhINFkl8&authKey=M6sbER0z59ZakgBr5erFeZyFZU15CI52bErNZa%2FxSvvGIuVAbY0N5866v89hm%2FK4&noverify=0&group_code=442108213)
 
 ## 给框架点赞
 
@@ -59,12 +46,6 @@ netcat 是一个功能强大的网络工具，通常用于调试和测试网络�
  <img src='https://django-vue-admin.com/alipay.jpg' width='200'>
  <img src='https://django-vue-admin.com/wechat.jpg' width='200'>
 </div>
-
-## 源码地址
-
-gitee地址(主推)：[https://gitee.com/huge-dream/django-vue3-admin](https://gitee.com/huge-dream/django-vue3-admin)👩‍👦‍👦
-
-github地址：[https://github.com/huge-dream/django-vue3-admin](https://github.com/huge-dream/django-vue3-admin)👩‍👦‍👦
 
 ## 内置功能
 
@@ -79,26 +60,10 @@ github地址：[https://github.com/huge-dream/django-vue3-admin](https://github.
 10. 🧑‍🔧地区管理：对省市县区域进行管理。
 11. 📁附件管理：对平台上所有文件、图片等进行统一管理。
 12. 🗓️操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
-13. 🔌[插件市场](https://bbs.django-vue-admin.com/plugMarket.html)：基于Django-Vue-Admin框架开发的应用和插件。
 
-## 插件市场 🔌
-
-1. #### [ptychohyla-folw 后台审批流插件](https://bbs.django-vue-admin.com/plugMarket/139.html)
-
-2. #### [dvadmin3 celery插件前端](https://bbs.django-vue-admin.com/plugMarket/134.html)
-
-3. #### [dvadmin3 celery插件后端](https://bbs.django-vue-admin.com/plugMarket/133.html)
-
-4. #### [ptychohyla-build插件](https://bbs.django-vue-admin.com/plugMarket/136.html)
-
-5. #### [ptychohyla-uniapp](https://e.coding.net/dvadmin-private/code/ptychohyla-uniapp-app.git)
-
-6. #### ptychohyla-folw-uniapp 审批(开发中，近期上线)
-
-## 仓库分支说明 💈
+## 仓库分支说明
 
 主分支：master（稳定版本）
-开发分支：develop
 
 ## 准备工作
 
