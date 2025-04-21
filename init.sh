@@ -58,7 +58,7 @@ check_redis() {
 
 i=1
 while [ $i -le 8 ]; do
-    if check_mysql || check_redis; then
+    if (check_mysql + check_redis = 2); then
         echo "正在迁移数据..."
         docker exec ptychohyla-django python3 manage.py makemigrations
         docker exec ptychohyla-django python3 manage.py migrate

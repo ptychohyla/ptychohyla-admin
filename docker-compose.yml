@@ -14,7 +14,7 @@ services:
       - ./backend/media:/backend/media
     expose:
       - "8080"
-    #restart: always
+    restart: always
     networks:
       network:
         ipv4_address: 177.10.0.11
@@ -38,7 +38,7 @@ services:
       - "8000:8000"
     expose:
       - "8000"
-    #restart: always
+    restart: always
     networks:
       network:
         ipv4_address: 177.10.0.12
@@ -47,7 +47,7 @@ services:
     image: mysql:8.0
     container_name: ptychohyla-mysql
     privileged: true
-    #restart: always
+    restart: always
     ports:
       - "3306:3306"
     environment:
@@ -63,30 +63,30 @@ services:
       network:
         ipv4_address: 177.10.0.13
 
-  ptychohyla-celery:
-    build:
-      context: .
-      dockerfile: ./docker_env/celery/Dockerfile
-    container_name: ptychohyla-celery
-    working_dir: /backend
-    depends_on:
-      - ptychohyla-mysql
-    environment:
-      PYTHONUNBUFFERED: 1
-      DATABASE_HOST: ptychohyla-mysql
-      TZ: Asia/Shanghai
-    volumes:
-      - ./backend:/backend
-      - ./logs/log:/var/log
-    #restart: always
-    networks:
-      network:
-        ipv4_address: 177.10.0.14
+#  ptychohyla-celery:
+#    build:
+#      context: .
+#      dockerfile: ./docker_env/celery/Dockerfile
+#    container_name: ptychohyla-celery
+#    working_dir: /backend
+#    depends_on:
+#      - ptychohyla-mysql
+#    environment:
+#      PYTHONUNBUFFERED: 1
+#      DATABASE_HOST: ptychohyla-mysql
+#      TZ: Asia/Shanghai
+#    volumes:
+#      - ./backend:/backend
+#      - ./logs/log:/var/log
+#    #restart: always
+#    networks:
+#      network:
+#        ipv4_address: 177.10.0.14
 
   ptychohyla-redis:
     image: redis:6.2.6-alpine # 指定服务镜像，最好是与之前下载的redis配置文件保持一致
     container_name: ptychohyla-redis # 容器名称
-    #restart: always
+    restart: always
     environment:
       - TZ=Asia/Shanghai # 设置时区
     volumes:

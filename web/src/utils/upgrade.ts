@@ -31,7 +31,8 @@ export async function checkVersion() {
 		return;
 	}
 	// 获取线上版本号 t为时间戳，防止缓存
-	await axios.get(`${META_ENV.VITE_PUBLIC_PATH}${VERSION_FILE_NAME}?t=${new Date().getTime()}`).then((res) => {
+	// ${META_ENV.VITE_PUBLIC_PATH}
+	await axios.get(`${VERSION_FILE_NAME}?t=${new Date().getTime()}`).then((res) => {
 		const { status, data } = res || {};
 		if (status === 200) {
 			// 获取当前版本号
