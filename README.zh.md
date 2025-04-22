@@ -1,18 +1,8 @@
-# Django-Vue3-Admin
-
-[![img](https://img.shields.io/badge/license-MIT-blue.svg)](https://gitee.com/liqianglog/django-vue-admin/blob/master/LICENSE)  [![img](https://img.shields.io/badge/python-%3E=3.7.x-green.svg)](https://python.org/)  [![PyPI - Django Version badge](https://img.shields.io/badge/django%20versions-3.2-blue)](https://docs.djangoproject.com/zh-hans/3.2/) [![img](https://img.shields.io/badge/node-%3E%3D%2012.0.0-brightgreen)](https://nodejs.org/zh-cn/) [![img](https://gitee.com/liqianglog/django-vue-admin/badge/star.svg?theme=dark)](https://gitee.com/liqianglog/django-vue-admin)
-
-[预 览](https://demo.dvadmin.com) | [官网文档](https://www.django-vue-admin.com) | [群聊](https://qm.qq.com/cgi-bin/qm/qr?k=fOdnHhC8DJlRHGYSnyhoB8P5rgogA6Vs&jump_from=webapi) | [社区](https://bbs.django-vue-admin.com) | [插件市场](https://bbs.django-vue-admin.com/plugMarket.html) | [Github](https://github.com/liqianglog/django-vue-admin)
-
-💡 **「关于」**
-
-我们是一群热爱代码的青年，在这个炙热的时代下，我们希望静下心来通过Code带来一点我们的色彩和颜色。
-
-因为热爱，所以拥抱未来!
+# Ptychohyla-Admin
 
 ## 平台简介
 
-💡 [django-vue3-admin](https://gitee.com/huge-dream/django-vue3-admin.git) 是一套全部开源的快速开发平台，毫无保留给个人免费使用、团体授权使用。
+    一套全部开源的快速开发平台，毫无保留给个人免费使用、团体授权使用。
     django-vue3-admin 基于RBAC模型的权限控制的一整套基础开发平台，权限粒度达到列级别，前后端分离，后端采用django + django-rest-framework，前端采用基于 vue3 + CompositionAPI + typescript + vite + element plus
 
 * 🧑‍🤝‍🧑前端采用 Vue3+TS+pinia+fastcrud(感谢[vue-next-admin](https://lyt-top.gitee.io/vue-next-admin-doc-preview/))
@@ -27,25 +17,11 @@
 | --------- | ------------ | ----------- | ----------- |
 | Edge ≥ 79 | Firefox ≥ 78 | Chrome ≥ 64 | Safari ≥ 12 |
 
-> 由于 Vue3 不再支持 IE11，故而 ElementPlus 也不支持 IE11 及之前版本。
-
-netcat 是一个功能强大的网络工具，通常用于调试和测试网络连接。它可以在命令行中使用，允许用户创建 TCP 或 UDP 连接、发送和接收数据、监听端口等。netcat 的灵活性使其成为网络管理员和开发人员的常用工具。
-<https://eternallybored.org/misc/netcat/>
-
 ## 在线体验
 
 * 账号：superadmin
 
-* 密码：admin123456
-
-👩‍👦‍👦文档地址：[DVAdmin官网](https://www.django-vue-admin.com)
-
-## 给框架点赞
-
-<div style="display: flex; gap: 10px;">
- <img src='https://django-vue-admin.com/alipay.jpg' width='200'>
- <img src='https://django-vue-admin.com/wechat.jpg' width='200'>
-</div>
+* 密码：admin123
 
 ## 内置功能
 
@@ -118,14 +94,10 @@ yarn build
   uvicorn application.asgi:application --port 8000 --host 0.0.0.0 --workers 8
 ~~~
 
-## 开发建议
-
-前后端backend与web各自单独一个窗口打开进行开发
-
 ### 访问项目
 
 * 访问地址：[http://localhost:8080](http://localhost:8080) (默认为此地址，如有修改请按照配置文件)
-* 账号：`superadmin` 密码：`admin123456`
+* 账号：`superadmin` 密码：`admin123`
 
 ### docker-compose 运行
 

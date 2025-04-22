@@ -201,7 +201,7 @@ class UserProfileImportSerializer(CustomModelSerializer):
     def save(self, **kwargs):
         data = super().save(**kwargs)
         password = hashlib.new(
-            "md5", str(self.initial_data.get("password", "admin123456")).encode(encoding="UTF-8")
+            "md5", str(self.initial_data.get("password", "123456")).encode(encoding="UTF-8")
         ).hexdigest()
         data.set_password(password)
         data.save()
