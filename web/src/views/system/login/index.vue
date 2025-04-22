@@ -12,18 +12,19 @@
 		</div>
 		<div class="login-right flex z-10">
 			<div class="login-right-warp flex-margin">
-<!--				<span class="login-right-warp-one"></span>-->
-<!--				<span class="login-right-warp-two"></span>-->
+				<!--				<span class="login-right-warp-one"></span>-->
+				<!--				<span class="login-right-warp-two"></span>-->
 				<div class="login-right-warp-mian">
 					<div class="login-right-warp-main-title">
-            {{userInfos.pwd_change_count===0?'初次登录修改密码':'欢迎登录'}}
-          </div>
+						{{ userInfos.pwd_change_count === 0 ? '初次登录修改密码' : '欢迎登录' }}
+					</div>
 					<div class="login-right-warp-main-form">
 						<div v-if="!state.isScan">
 							<el-tabs v-model="state.tabsActiveName">
-                <el-tab-pane :label="$t('message.label.changePwd')" name="changePwd"  v-if="userInfos.pwd_change_count===0">
-                  <ChangePwd />
-                </el-tab-pane>
+								<el-tab-pane :label="$t('message.label.changePwd')" name="changePwd"
+									v-if="userInfos.pwd_change_count === 0">
+									<ChangePwd />
+								</el-tab-pane>
 								<el-tab-pane :label="$t('message.label.one1')" name="account" v-else>
 									<Account />
 								</el-tab-pane>
@@ -34,11 +35,11 @@
 								</el-tab-pane> -->
 							</el-tabs>
 						</div>
-<!--						<Scan v-if="state.isScan" />-->
-<!--						<div class="login-content-main-sacn" @click="state.isScan = !state.isScan">-->
-<!--							<i class="iconfont" :class="state.isScan ? 'icon-diannao1' : 'icon-barcode-qr'"></i>-->
-<!--							<div class="login-content-main-sacn-delta"></div>-->
-<!--						</div>-->
+						<!--						<Scan v-if="state.isScan" />-->
+						<!--						<div class="login-content-main-sacn" @click="state.isScan = !state.isScan">-->
+						<!--							<i class="iconfont" :class="state.isScan ? 'icon-diannao1' : 'icon-barcode-qr'"></i>-->
+						<!--							<div class="login-content-main-sacn-delta"></div>-->
+						<!--						</div>-->
 					</div>
 				</div>
 			</div>
@@ -48,7 +49,7 @@
 			<p>Copyright © {{ getSystemConfig['login.copyright'] || '2021-2024 北京信码新创科技有限公司' }} 版权所有</p>
 			<p class="la-other" style="margin-top: 5px;">
 				<a href="https://beian.miit.gov.cn" target="_blank">{{ getSystemConfig['login.keep_record'] ||
-					'京ICP备2021031018号' }}</a>
+					'' }}</a>
 				|
 				<a :href="getSystemConfig['login.help_url'] ? getSystemConfig['login.help_url'] : '#'"
 					target="_blank">帮助</a>
@@ -67,7 +68,7 @@
 </template>
 
 <script setup lang="ts" name="loginIndex">
-import {defineAsyncComponent, onMounted, reactive, computed, watch} from 'vue';
+import { defineAsyncComponent, onMounted, reactive, computed, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useThemeConfig } from '/@/stores/themeConfig';
 import { NextLoading } from '/@/utils/loading';
@@ -82,7 +83,7 @@ const Mobile = defineAsyncComponent(() => import('/@/views/system/login/componen
 const Scan = defineAsyncComponent(() => import('/@/views/system/login/component/scan.vue'));
 const ChangePwd = defineAsyncComponent(() => import('/@/views/system/login/component/changePwd.vue'));
 import _ from "lodash-es";
-import {useUserInfo} from "/@/stores/userInfo";
+import { useUserInfo } from "/@/stores/userInfo";
 const { userInfos } = storeToRefs(useUserInfo());
 
 // 定义变量内容
@@ -94,13 +95,13 @@ const state = reactive({
 });
 
 
-watch(()=>userInfos.value.pwd_change_count,(val)=>{
-  if(val===0){
-    state.tabsActiveName ='changePwd'
-  }else{
-    state.tabsActiveName ='account'
-  }
-},{deep:true,immediate:true})
+watch(() => userInfos.value.pwd_change_count, (val) => {
+	if (val === 0) {
+		state.tabsActiveName = 'changePwd'
+	} else {
+		state.tabsActiveName = 'account'
+	}
+}, { deep: true, immediate: true })
 
 
 // 获取布局配置信息
@@ -280,7 +281,7 @@ onMounted(() => {
 					height: 130px;
 					line-height: 130px;
 					font-size: 32px;
-          font-weight: 600;
+					font-weight: 600;
 					text-align: center;
 					letter-spacing: 3px;
 					animation: logoAnimation 0.3s ease;
