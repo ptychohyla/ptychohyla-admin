@@ -1,7 +1,7 @@
 <template>
 	<div class="layout-footer pb5 pt2">
 		<div class="layout-footer-warp">
-			<div>❤️ Powered by Django-Vue3-Admin Copyright © DVAdmin团队 ❤️</div>
+			<div>❤️ Powered by Ptychohyla-Admin Copyright © Ptychohyla团队 ❤️</div>
 		</div>
 	</div>
 </template>
@@ -14,6 +14,7 @@
 .layout-footer {
 	width: 100%;
 	display: flex;
+
 	&-warp {
 		margin: auto;
 		color: var(--el-text-color-secondary);

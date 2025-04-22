@@ -8,7 +8,7 @@ import { useThemeConfig } from '/@/stores/themeConfig';
 import { i18n } from '/@/i18n/index';
 import { Local } from '/@/utils/storage';
 import { verifyUrl } from '/@/utils/toolsValidate';
-import {SystemConfigStore} from "/@/stores/systemConfig";
+import { SystemConfigStore } from "/@/stores/systemConfig";
 
 // 引入组件
 const SvgIcon = defineAsyncComponent(() => import('/@/components/svgIcon/index.vue'));
@@ -32,10 +32,10 @@ export function elSvg(app: App) {
  */
 export function useTitle() {
 	const stores = SystemConfigStore(pinia);
-	const { systemConfig }: { systemConfig: any} = storeToRefs(stores);
+	const { systemConfig }: { systemConfig: any } = storeToRefs(stores);
 	nextTick(() => {
 		let webTitle = '';
-		let globalTitle: string = systemConfig['base.web_title'];
+		let globalTitle: string = systemConfig['base.web_title'] || 'Ptychohyla';
 		const { path, meta } = router.currentRoute.value;
 		if (path === '/login') {
 			webTitle = <string>meta.title;
@@ -55,7 +55,7 @@ export function useFavicon() {
 	const { systemConfig } = storeToRefs(stores);
 	nextTick(() => {
 		const iconUrl = systemConfig.value['base.web_favicon']
-		if(iconUrl){
+		if (iconUrl) {
 			// 动态设置 favicon，这里假设 favicon 的 URL 是动态获取的或从变量中来
 			const faviconUrl = `${iconUrl}?t=${new Date().getTime()}`;
 			const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
@@ -218,7 +218,7 @@ const other = {
 	useTitle: () => {
 		useTitle();
 	},
-	useFavicon:()=>{
+	useFavicon: () => {
 		useFavicon()
 	},
 	setTagsViewNameI18n(route: RouteToFrom) {

@@ -26,7 +26,7 @@
                 "setting": null,
                 "children": []
             },
-        {
+            {
                 "parent": 10,
                 "title": "网站小图标",
                 "key": "web_favicon",
@@ -196,7 +196,7 @@
                 "parent": 1,
                 "title": "帮助链接",
                 "key": "help_url",
-                "value": "https://django-vue-admin.com",
+                "value": "https://kayleh.top",
                 "sort": 6,
                 "status": true,
                 "data_options": null,
