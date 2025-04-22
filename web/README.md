@@ -152,7 +152,7 @@ npm run dev
 ### 访问项目
 
 - 访问地址：[http://localhost:8080](http://localhost:8080) (默认为此地址，如有修改请按照配置文件)
-- 账号：`superadmin` 密码：`admin123456`
+- 账号：`superadmin` 密码：`admin123`
 
 
 
