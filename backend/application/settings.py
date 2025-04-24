@@ -59,8 +59,13 @@ INSTALLED_APPS = [
     "drf_yasg",
     "captcha",
     "channels",
+]
+
+My_Apps = [
     "dvadmin.system",
 ]
+
+INSTALLED_APPS += My_Apps
 
 MIDDLEWARE = [
     "dvadmin.utils.middleware.HealthCheckMiddleware",
