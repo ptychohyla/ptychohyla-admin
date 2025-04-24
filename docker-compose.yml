@@ -105,6 +105,16 @@ services:
       network:
         ipv4_address: 177.10.0.15
 
+  # 启动cloudflared, 用于穿透到公网 (https://one.dash.cloudflare.com/9d71507f88566361799adb3d173ed94b/networks/tunnels)
+#  ptychohyla-cloudflared:
+#    image: cloudflare/cloudflared:latest
+#    container_name: ptychohyla-cloudflared
+#    command: ["tunnel", "--no-autoupdate", "run", "--token", "${CLOUDFLARE_TOKEN}"]
+#    restart: always
+#    networks:
+#      network:
+#        ipv4_address: 177.10.0.16  # 建议使用与现有服务相同的网络并分配新IP
+
 networks:
   network:
     ipam:
