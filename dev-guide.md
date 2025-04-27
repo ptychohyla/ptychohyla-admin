@@ -5,6 +5,7 @@
 ```bash
 cd backend
 python manage.py startapp demo
+# 如果需要指定创建的目录，可以先创建目录(目录名称与需要创建的app名称同名)再执行：python manage.py startapp demo ./demo
 ```
 
 ### 添加到settings.py

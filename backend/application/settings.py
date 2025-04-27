@@ -63,6 +63,7 @@ INSTALLED_APPS = [
 
 My_Apps = [
     "dvadmin.system",
+    "practice.paper"
 ]
 
 INSTALLED_APPS += My_Apps

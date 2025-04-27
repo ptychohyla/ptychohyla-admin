@@ -120,3 +120,12 @@ urlpatterns = (
         + static(settings.STATIC_URL, document_root=settings.STATIC_URL)
         + [re_path(ele.get('re_path'), include(ele.get('include'))) for ele in settings.PLUGINS_URL_PATTERNS]
 )
+
+# 就是添加如下内容，把自己的路由单独写出来，这样方便与dvadmin3的官方路由作区分
+My_Urls = (
+ [      #django创建的应用名称
+        path('',include('practice.paper.urls')),]
+)
+
+# 这里把自己的路径单独出来，后面再追加在一起
+urlpatterns += My_Urls

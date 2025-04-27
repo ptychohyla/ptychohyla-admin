@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite --force",
-		"build:dev":"vite build --mode development",
+		"build:dev": "vite build --mode development",
 		"build": "vite build",
 		"build:local": "vite build --mode local_prod",
 		"lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
@@ -57,7 +57,8 @@
 		"vue-i18n": "^9.14.0",
 		"vue-router": "^4.4.3",
 		"vxe-table": "^4.6.18",
-		"xe-utils": "^3.5.30"
+		"xe-utils": "^3.5.30",
+		"yarn": "^1.22.22"
 	},
 	"devDependencies": {
 		"@types/node": "^18.19.42",
