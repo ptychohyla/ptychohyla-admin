@@ -6,10 +6,9 @@
     django-vue3-admin 基于RBAC模型的权限控制的一整套基础开发平台，权限粒度达到列级别，前后端分离，后端采用django + django-rest-framework，前端采用基于 vue3 + CompositionAPI + typescript + vite + element plus
 
 * 🧑‍🤝‍🧑前端采用 Vue3+TS+pinia+fastcrud(感谢[vue-next-admin](https://lyt-top.gitee.io/vue-next-admin-doc-preview/))
-* 👭后端采用 Python 语言 Django 框架以及强大的 [Django REST Framework](https://pypi.org/project/djangorestframework)。
+* 👭后端采用 Python 语言 [Django 框架](https://docs.djangoproject.com/)以及强大的 [Django REST Framework](https://pypi.org/project/djangorestframework)。
 * 👫权限认证使用[Django REST Framework SimpleJWT](https://pypi.org/project/djangorestframework-simplejwt)，支持多终端认证系统。
-* 👬支持加载动态权限菜单，多方式轻松权限控制。
-* 👬全新的列权限管控，粒度细化到每一列。
+* 👬支持加载动态权限菜单，多方式轻松权限控制，全新的列权限管控，粒度细化到每一列。
 
 #### 🏭 环境支持
 
