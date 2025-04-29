@@ -1,7 +1,7 @@
-import { request,downloadFile } from '/@/utils/service';
+import { request, downloadFile } from '/@/utils/service';
 import { PageQuery, AddReq, DelReq, EditReq, InfoReq } from '@fast-crud/fast-crud';
 
-export const apiPrefix = '/api/VIEWSETNAME/';
+export const apiPrefix = '/api/PracticesModelViewSet/';
 
 export function GetList(query: PageQuery) {
 	return request({
@@ -41,10 +41,10 @@ export function DelObj(id: DelReq) {
 	});
 }
 
-export function exportData(params:any){
-    return downloadFile({
-        url: apiPrefix + 'export_data/',
-        params: params,
-        method: 'get'
-    })
+export function exportData(params: any) {
+	return downloadFile({
+		url: apiPrefix + 'export_data/',
+		params: params,
+		method: 'get',
+	});
 }

@@ -6,9 +6,9 @@
 			</template>
 			<!-- 注释编号: django-vue3-admin-index442216: -->
 			<!-- 注释编号:django-vue3-admin-index39263917:代码开始行-->
-			<!--  功能说明:使用导入组件，并且修改api地址为当前对应的api，当前是demo的api="api/PaperModelViewSet/"-->
+			<!--  功能说明:使用导入组件，并且修改api地址为当前对应的api，当前是demo的api="api/PracticesModelViewSet/"-->
 			<template #actionbar-right>
-				<importExcel api="api/PaperModelViewSet/" v-auth="'user:Import'">导入</importExcel>
+				<importExcel api="api/PracticesModelViewSet/" v-auth="'user:Import'">导入</importExcel>
 			</template>
 			<!--  注释编号:django-vue3-admin-index263917:代码结束行-->
 
@@ -26,7 +26,7 @@ import importExcel from '/@/components/importExcel/index.vue'
 
 
 export default defineComponent({    //这里配置defineComponent
-	name: "PaperModelViewSet",   //把name放在这里进行配置了
+	name: "PracticesModelViewSet",   //把name放在这里进行配置了
 	components: { importExcel },  //注释编号: django-vue3-admin-index552416: 注册组件，把importExcel组件放在这里，这样<template></template>中才能正确的引用到组件
 	setup() {   //这里配置了setup()
 

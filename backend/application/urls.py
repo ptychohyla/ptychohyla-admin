@@ -122,9 +122,9 @@ urlpatterns = (
 )
 
 # 就是添加如下内容，把自己的路由单独写出来，这样方便与dvadmin3的官方路由作区分
+    #django创建的应用名称
 My_Urls = (
- [      #django创建的应用名称
-        path('',include('practice.paper.urls')),]
+    [  path('',include('practices.urls')),] 
 )
 
 # 这里把自己的路径单独出来，后面再追加在一起
